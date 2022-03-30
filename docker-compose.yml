@@ -11,9 +11,9 @@ services:
     ports:
       - '8080:80'
     environment:
-      SITE_TITLE: "FlashPaper :: Self-Destructing Message"
+      SITE_TITLE: "Encrypted Text Sharing :: ROI Technology Inc"
       RETURN_FULL_URL: "true"
-      MAX_SECRET_LENGTH: "3000"
+      MAX_SECRET_LENGTH: "2048"
       ANNOUNCEMENT: ""
       MESSAGES_ERROR_SECRET_TOO_LONG: "Input length too long"
       MESSAGES_SUBMIT_SECRET_HEADER: "Create A Self-Destructing Message"
@@ -26,6 +26,6 @@ services:
       MESSAGES_VIEW_SECRET_HEADER: "Self-Destructing Message"
       MESSAGES_VIEW_SECRET_HEADER: "This message has been destroyed"
       PRUNE_ENABLED: "true"
-      PRUNE_MIN_DAYS: 365
-      PRUNE_MAX_DAYS: 730
+      PRUNE_MIN_DAYS: 14
+      PRUNE_MAX_DAYS: 31
       
